@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
+import Image from 'next/image'
 function Row({ data, title }) {
   const imgUrl = "https://image.tmdb.org/t/p/original";
   return (
@@ -8,12 +8,12 @@ function Row({ data, title }) {
       <h1 className="p-3 font-serif text-xl italic font-medium text-center text-yellow-400 ">
         {title}
       </h1>
-        <div className="p-3 flex overflow-x-scroll no-scrollbar">
+        <div className="flex p-3 overflow-x-scroll no-scrollbar">
           {data.map((movie) => {
             return (
               <div key={movie.id}>
                 <Link href={`/detail/${movie.id}`}>
-                <img
+                <Image
                   className="h-48 max-w-xs mx-2 duration-300 rounded-lg cursor-pointer hover:scale-110"
                   src={imgUrl + movie.poster_path}
                   alt={movie.name}

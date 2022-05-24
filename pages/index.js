@@ -3,6 +3,7 @@ import GetData from "../components/getdata";
 import axios from "axios";
 import Search from "../components/search";
 
+
 export default function Home() {
   const[data ,setData]=useState(0)
   const [search, setSearch] = useState({
@@ -41,7 +42,7 @@ export default function Home() {
     <>
       <div className="relative ">
         <img src="/background.jpg" alt="" className="w-full " />
-        <div className="absolute top-0 w-full pt-10 text-center  md:pt-72 sm:pt-20">
+        <div className="absolute top-0 w-full pt-10 text-center md:pt-72 sm:pt-20">
           <h1 className="font-bold text-white md:text-5xl sm:text-3xl ">
             Unlimited movies,Tv
           </h1>
@@ -53,7 +54,7 @@ export default function Home() {
           </h2>
           <form className="flex-row" onSubmit={handleSubmit}>
             <input
-              className="px-2 py-2 leading-tight text-gray-700 border rounded shadow appearance-none  sm:w-96 w-50 sm:px-3 sm:py-2 focus:outline-none focus:shadow-outline"
+              className="px-2 py-2 leading-tight text-gray-700 border rounded shadow appearance-none sm:w-96 w-50 sm:px-3 sm:py-2 focus:outline-none focus:shadow-outline"
               type="text"
               name="movie"
               value={search.movie}
