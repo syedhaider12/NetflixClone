@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from 'next/image'
+
 function Row({ data, title }) {
   const imgUrl = "https://image.tmdb.org/t/p/original";
   return (
@@ -13,7 +13,7 @@ function Row({ data, title }) {
             return (
               <div key={movie.id}>
                 <Link href={`/detail/${movie.id}`}>
-                <Image
+                <img
                   className="h-48 max-w-xs mx-2 duration-300 rounded-lg cursor-pointer hover:scale-110"
                   src={imgUrl + movie.poster_path}
                   alt={movie.name}

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from "next/link";
-import Image from 'next/image'
+
 function Search({data,title}) {
   const imgUrl = "https://image.tmdb.org/t/p/original";
   return (
@@ -13,7 +13,7 @@ function Search({data,title}) {
             
               <div key={data.id}>
                 <Link href={`/detail/${data.id}`}>
-                <Image
+                <img
                   className="h-48 max-w-xs mx-2 duration-300 rounded-lg cursor-pointer hover:scale-110"
                   src={imgUrl + data.poster_path}
                   alt={data.name}

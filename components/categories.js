@@ -1,6 +1,5 @@
 import React from 'react'
-import Link from "next/link";
-import Image from 'next/image'
+import Link from "next/link"
 function Categories({data}) {
   const imgUrl = "https://image.tmdb.org/t/p/original";
   return (
@@ -13,7 +12,7 @@ function Categories({data}) {
         return (
           <div key={movie.id} >
             <Link href={`/detail/${movie.id}`}>
-            <Image
+            <img
               className="max-w-xs mx-2 duration-300 rounded-lg cursor-pointer h-60 hover:scale-110"
               src={imgUrl + movie.poster_path}
               alt={movie.name}
@@ -28,7 +27,7 @@ function Categories({data}) {
         return (
           <div key={movie.id} >
             <Link href={`/detail/${movie.id}`}>
-            <Image
+            <img
               className="max-w-xs mx-2 duration-300 rounded-lg cursor-pointer h-60 hover:scale-110"
               src={imgUrl + movie.poster_path}
               alt={movie.name}
@@ -43,7 +42,7 @@ function Categories({data}) {
         return (
           <div key={movie.id } >
             <Link href={`/detail/${movie.id}`}>
-            <Image
+            <img
               className="max-w-xs mx-2 duration-300 rounded-lg cursor-pointer h-60 hover:scale-110"
               src={imgUrl + movie.poster_path}
               alt={movie.name}
