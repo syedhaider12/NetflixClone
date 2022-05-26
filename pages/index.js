@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import GetData from "../components/getdata";
 import axios from "axios";
 import Search from "../components/search";
-
+import Image from "next/image";
 
 export default function Home() {
   const[data ,setData]=useState(0)
@@ -20,7 +20,7 @@ export default function Home() {
   const handleSubmit =(e)=>{
     e.preventDefault();
     submitData();
-    setData([])
+    
     
   }
   async function submitData(){
@@ -40,8 +40,8 @@ export default function Home() {
 }
   return (
     <>
-      <div className="relative ">
-        <img src="/background.jpg" alt="" className="w-full " />
+      <div className="relative  bg-black">
+      <Image src="/background.jpg" alt="" height={600}  width={1500}/>
         <div className="absolute top-0 w-full pt-10 text-center md:pt-72 sm:pt-20">
           <h1 className="font-bold text-white md:text-5xl sm:text-3xl ">
             Unlimited movies,Tv

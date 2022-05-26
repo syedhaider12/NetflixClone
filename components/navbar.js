@@ -27,16 +27,16 @@ function Navbar() {
                     
               <ul className ={!dropDown ?"  absolute mt-2  z-40 w-24 rounded-md shadow-lg bg-white   ":"hidden"}>
                 <li className="text-center text-black hover:bg-red-500 hover:text-white "> <Link href="/actions">
-                <a>Action</a>
+                Action
               </Link></li>
                 <li className="text-center text-black hover:bg-red-500 hover:text-white "><Link href="/horror">
-                <a>Horror</a>
+                Horror
               </Link></li>
                 <li className="text-center text-black hover:bg-red-500 hover:text-white "><Link href="/comedy">
-                <a>Comedy</a>
+                Comedy
               </Link></li>
                 <li className="text-center text-black hover:bg-red-500 hover:text-white "><Link href="/romance">
-                <a>Romance</a>
+                Romance
               </Link></li>
               </ul>
                </button>
@@ -73,16 +73,16 @@ function Navbar() {
                     
               <ul className ={!dropDown ?"   mt-1   w-full  bg-white   ":"hidden"}>
               <li className="text-center text-black hover:bg-red-500 hover:text-white "> <Link href="/actions">
-                <a>Action</a>
+                Action
               </Link></li>
                 <li className="text-center text-black hover:bg-red-500 hover:text-white "><Link href="/horror">
-                <a>Horror</a>
+                Horror
               </Link></li>
                 <li className="text-center text-black hover:bg-red-500 hover:text-white "><Link href="/comedy">
-                <a>Comedy</a>
+                Comedy
               </Link></li>
                 <li className="text-center text-black hover:bg-red-500 hover:text-white "><Link href="/romance">
-                <a>Romance</a>
+                Romance
               </Link></li>
               </ul>
                </button>
