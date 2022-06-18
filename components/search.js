@@ -14,7 +14,7 @@ function Search({data,title}) {
           
             
               <div key={data.id}>
-                <Link href={`/detail/${data.id}`} as= {"/detail/" + data.id}>
+                <Link href={`/detail/${data.id}`} as= {"/detail/" + data.id} passHref>
                 <div className="max-w-xs mx-2 duration-300  cursor-pointer h-60 hover:scale-110">
                     <Image
                       loader={myLoader}
