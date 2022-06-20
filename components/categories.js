@@ -10,7 +10,7 @@ function Categories({ data }) {
   return (
     <div className="bg-black ">
       <div className="flex py-3  overflow-x-scroll no-scrollbar">
-        {data
+        {data && data
           .filter((movie, idx) => {
             return idx <= 6;
           })
@@ -34,7 +34,7 @@ function Categories({ data }) {
           })}
       </div>
       <div className="flex py-3  overflow-x-scroll no-scrollbar ">
-        {data
+        {data && data
           .filter((movie, idx) => idx > 6 && idx < 14)
           .map((movie) => {
             return (
@@ -56,7 +56,7 @@ function Categories({ data }) {
           })}
       </div>
       <div className="flex   overflow-x-scroll no-scrollbar ">
-        {data
+        {data && data
           .filter((movie, idx) => idx > 13 && idx < 21)
           .map((movie) => {
             return (
